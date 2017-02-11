@@ -38,6 +38,7 @@ public class crowdPage {
 	    	driver.findElement(By.id("SubmitCreate")).click();
 	    }
 	    
+	    //fills in personal information
 	    public void fillInPersonal()
 	    {
 	    	wait.until(ExpectedConditions.elementToBeClickable(By.className("radio")));
@@ -53,7 +54,7 @@ public class crowdPage {
 	
 	  
 	    }
-	    
+	    //selects date from dropdowns by values 
 	    public void selectDate(String day, String month, String year)
 	    {
 	    	
@@ -64,7 +65,7 @@ public class crowdPage {
 	    	new Select(driver.findElement(By.id("years"))).selectByValue(year);
 	    	
 	    }
-	    
+	    //inputs information for address
 	    public void selectAddress()
 	    {
 	    	
@@ -86,7 +87,7 @@ public class crowdPage {
 	    	
 	    	driver.findElement(By.name("submitAccount")).click();
 	    }
-	    
+	    //navigates to new dress page
 	    public void navigateToDress()
 	    {
 	    	driver.get("http://automationpractice.com/index.php?id_category=8&controller=category"); 
