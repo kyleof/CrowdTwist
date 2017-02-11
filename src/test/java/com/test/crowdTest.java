@@ -3,7 +3,6 @@ package com.test;
 import org.testng.annotations.Test;
 
 import com.test.crowd.crowdPage;
-import com.test.crowd.dressPage;
 
 public class crowdTest {
 	
@@ -17,9 +16,9 @@ public class crowdTest {
 	  signUp.selectDate("12", "12", "1992");
 	  signUp.selectAddress();
 	  signUp.navigateToDress();
-//	  signUp.pickDress();
-//	  signUp.pay();
-//	  signUp.backToOrders();
+	  signUp.pickDress();
+	  signUp.pay();
+	  signUp.backToOrders();
 	
 	  
 	  
